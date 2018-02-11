@@ -29,7 +29,7 @@ $P4C_BM_SCRIPT mtag-edge.p4 --json mtag-edge.json
 
 # This gives libtool the opportunity to "warm-up"
 sudo $SWITCH_PATH >/dev/null 2>&1
-sudo PYTHONPATH=$PYTHONPATH:$BMV2_PATH/mininet/ python topo.py \
+sudo PYTHONPATH=$PYTHONPATH:$BMV2_PATH/mininet/ python mininet_setup.py \
     --behavioral-exe $SWITCH_PATH \
     --json1 mtag-aggregation.json \
     --json2 mtag-edge.json \
